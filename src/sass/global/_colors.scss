@@ -1,0 +1,24 @@
+$colorMain:#72beab;
+$colorSecondary:rgb(194,217,174);
+$colorPurple:rgb(95,112,221);
+$colorGray:#f7f7f7;
+$colorClear:rgba(0,0,0,0.7);
+
+$colorBlue:#5fbbdd;
+$colorBlueDark:#19a1d3;
+$colorBlueDark2:#1c647e;
+
+$colorGreen:rgb(90,202,177);
+$colorGreenLight:rgb(224, 253, 246);
+$colorGreenLight2:rgb(178, 250, 232);
+$colorGreenLight3:#c3ebe2;
+
+.blue { color:$colorBlue; }
+.purple { color:$colorPurple; }
+.green { color:$colorMain; }
+
+.bg-blue { background-color:$colorBlue; }
+.bg-purple { background-color:$colorPurple; }
+.bg-green { background-color:$colorMain; }
+
+.blueDark { color:$colorBlueDark; }

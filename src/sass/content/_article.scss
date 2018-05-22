@@ -1,0 +1,115 @@
+.article {
+    padding-top:64px;
+    padding-bottom:64px;
+    max-width:900px;
+    a:first-of-type {
+        position:absolute;
+        top:80px;
+        text-decoration:none;
+        color:$colorBlue;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+    h1 {
+        text-align:center;
+        font-size:2.4em;
+        font-weight:400;
+        color:$colorMain;
+        padding-bottom:16px;
+        padding-top:32px;
+    }
+    h2 {
+        color:$colorMain;
+        font-size:2em;
+        font-weight:400;
+        padding-bottom:16px;
+        padding-top:24px;
+        padding-left:16px;
+    }
+    p {
+        font-size:1.2em;
+        font-weight:100;
+        line-height:1.6em;
+        padding-bottom:16px;
+    }
+    &--link {
+        position:absolute;
+        top:80px;
+        text-decoration:none;
+        color:$colorBlue;
+        &:hover {
+            text-decoration:underline;
+        } 
+    }
+    &--donate {
+        margin:48px auto auto auto;
+        display:block;
+        border-radius:8px;
+        background:$colorPurple;
+        color:#fff;
+        box-sizing:border-box;
+        padding:8px 0 24px 0;
+        max-width:600px;
+        h2 {
+            color:#fff;
+            text-align:center;
+            padding:0;
+        }
+        &--container {
+            display:flex;
+            justify-content:center;
+            align-content:center;
+            margin-top:16px;
+            span {
+                font-size:1.5em;
+            }
+            &--number {
+                font-size:1.5em;
+                font-weight:100;
+                width:160px;
+                margin:0 8px;
+                color:#333;
+                border:0;
+                outline:none;
+            }
+            &--submit {
+                border:2px solid #fff;
+                border-radius:4px;
+                background:$colorPurple;
+                color:#fff;
+                font-size:1.1em;
+                outline:none;
+                padding:0 16px;
+                &:hover {
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+    &--img__float {
+        float:left;
+        padding-right:32px;
+        padding-top:16px;
+    }
+    &--figure {
+        margin:16px auto 32px auto;
+        border:16px solid #eee;
+        border-bottom:0;
+        max-width:480px;
+        img {
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            margin:auto;
+            display:block;
+        }
+        p {
+            background:#eee;
+            margin:auto;
+            max-width:480px;
+            padding-top:16px;
+            font-size:1.1em;
+        }
+    }
+}

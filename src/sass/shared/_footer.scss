@@ -1,0 +1,23 @@
+.footer {
+    height:96px;
+    width:100%;
+    background:$colorBlue;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    p {
+        color:#fff;
+        font-size:1.3em;
+    }
+    div {
+        img {
+            margin:0 8px;
+            transition:opacity 120ms;
+            &:hover {
+                cursor:pointer;
+                opacity:0.6;
+                transition:opacity 120ms;
+            }
+        }
+    }
+}

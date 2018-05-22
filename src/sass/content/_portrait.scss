@@ -1,0 +1,36 @@
+.portrait {
+    padding-bottom:32px;
+    &:nth-child(odd) {
+        background:$colorGreenLight2;
+    }
+    &:nth-child(even) {
+        background:$colorGreenLight;
+    }
+    a { text-decoration:none; }
+    &--container {
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(auto-fill, 192px);
+        grid-row-gap:40px;
+        justify-content:space-around;
+        h3 {
+            text-align:center;
+            text-decoration:none;
+            font-size:1.5em;
+        }
+        &--item__blue {
+            justify-self:center;
+            width:160px;
+            position:relative;
+            &:hover img {
+                border:4px solid $colorBlueDark;
+                transition:border 120ms;
+            }
+            img {
+                border-radius:50%;
+                border:4px solid #fff;
+                transition:border 120ms;
+            }
+        }
+    }
+}

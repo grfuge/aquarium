@@ -1,0 +1,64 @@
+.visit-main {
+    position:relative;
+    height:640px;
+    box-sizing:border-box;
+    padding-top:96px;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    background-size:cover;
+    background-position:center;
+    background-image:url("../img/bg/coral01--tiny.jpg");
+    @include screenSmall {
+        background-image:url("../img/bg/coral01--small.jpg"); }
+    @include screenMedium {
+        background-image:url("../img/bg/coral01--medium.jpg"); }
+    @include screenLarge {
+        background-image:url("../img/bg/coral01--large.jpg"); }
+    @include screenFull {
+        background-image:url("../img/bg/coral01--full.jpg"); }
+    &--container {
+        background:rgba(0,0,0,0.7);
+        width:100%;
+        padding:64px 0;
+        height:480px;
+        @include screenMedium {
+            height:auto;
+        }
+    }
+    &--map {
+        display:none;
+        @include screenMedium {
+            display:block;
+        }
+    }
+}
+
+.visit-contact {
+    &--button {
+        color:#fff;
+        text-align:center;
+        background:$colorBlue;
+        padding:4px 0;
+        user-select:none;
+        &:hover {
+            cursor:pointer;
+        }
+    }
+    &--form {
+        display:flex;
+        justify-content:center;
+        padding-bottom:64px;
+        &--container {
+            input, textarea {
+                width:320px;
+                margin-bottom:8px;
+            }
+            textarea {
+                resize:none;
+                height:192px;
+                margin-bottom:16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@mixin card-alt--item($color) {
+    margin-bottom:24px;
+    width:528px;
+    text-decoration:none;
+    display:block;
+    @include screenSmall {
+        display:grid;
+        grid-template-columns:224px 1fr;
+    }
+    img {
+        display:none;
+        @include screenSmall {
+            display:block;
+        }
+    }
+    &:hover div h4 {
+        color:#fff;
+        background:$color;
+        transition:all 150ms;
+    }
+    div {
+        margin-left:32px;
+        margin-right:32px;
+        @include screenSmall {
+            margin-right:auto;
+        }
+        position:relative;
+        height:100%;
+        h3 {
+            font-size:1.6em;
+            font-weight:400;
+            margin-bottom:16px;
+        }
+        p {
+            font-size:1.2em;
+            font-weight:100;
+            color:#000;
+            margin-bottom:16px;
+            @include screenSmall {
+                margin-bottom:auto;
+            }
+        }
+        h4 {
+            color:$color;
+            border:2px solid $color;
+            font-size:1.5em;
+            font-weight:400;
+            text-align:center;
+            width:100%;
+            height:1.6em;
+            border-radius:8px;
+            line-height:1.6em;
+            @include center-xy(50%, calc(100% - 0.8em));
+            transition:all 150ms;
+        }
+    }
+}
+
+.card-alt {
+    &--container {
+        display:grid;
+        grid-template-columns:repeat(auto-fill, 528px);
+        justify-content:space-around;
+        &--item {
+            &__purple {
+                @include card-alt--item($colorPurple);
+            }
+            &__blue {
+                @include card-alt--item($colorBlue);
+            }
+            &__green {
+                @include card-alt--item($colorGreen);
+            }
+        }
+    }
+}

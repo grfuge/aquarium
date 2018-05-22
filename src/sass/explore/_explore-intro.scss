@@ -1,0 +1,34 @@
+.explore-intro {
+    overflow:hidden;
+    position:relative;
+    height:600px;
+    background-size:cover;
+    background-position:center;
+    background-image:url("../img/bg/coral02--tiny.jpg");
+    @include screenSmall {
+        background-image:url("../img/bg/coral02--small.jpg"); }
+    @include screenMedium {
+        background-image:url("../img/bg/coral02--medium.jpg"); }
+    @include screenLarge {
+        background-image:url("../img/bg/coral02--large.jpg"); }
+    @include screenFull {
+        background-image:url("../img/bg/coral02--full.jpg"); }
+    &--container {
+        background:rgba(0,0,0,0.75);
+        color:#fff;
+        padding:32px 80px;
+        @include center-xy(50%, calc(50% + 32px));
+        h2 {
+            box-sizing:border-box;
+            width:12em;
+            font-size:2.7em;
+            span { color:$colorSecondary; }
+            &:last-of-type {
+                margin-bottom:16px;
+            }
+            &:first-of-type {
+                margin-top:16px;
+            }
+        }
+    }
+}

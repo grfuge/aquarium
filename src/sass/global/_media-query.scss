@@ -1,0 +1,24 @@
+$screenHeightSmall: 480px;
+$screenWidthSmall: 568px;
+$screenWidthMedium: 768px;
+$screenWidthLarge: 900px;
+$screenWidthFull: 1200px;
+
+@mixin screenSmall { @media screen and
+    (min-width: $screenWidthSmall) and (min-height: $screenHeightSmall) {
+        @content; } }
+@mixin screenMedium { @media screen and
+    (min-width: $screenWidthMedium) and (min-height: $screenHeightSmall) {
+        @content; } }
+@mixin screenLarge { @media screen and
+    (min-width: $screenWidthLarge) and (min-height: $screenHeightSmall) {
+        @content; } }
+@mixin screenFull { @media screen and
+    (min-width: $screenWidthFull) and (min-height: $screenHeightSmall) {
+        @content; } }
+
+@mixin ie { @media screen\0 { @content; } }
+
+@mixin twoColumns { @media screen and (min-width: 760px) and (max-width: 1099px) and (min-height: $screenHeightSmall) { @content; } }
+
+@mixin threeColumns { @media screen and (max-width: 759px) , (min-width: 1099px) { @content; } }
